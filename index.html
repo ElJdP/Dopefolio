@@ -232,66 +232,31 @@ In this portfolio, you will be able to see a set of projects I previously create
            
           </span>
         </h2>
-        <div class="contact__form-container">
-          <form
-          <form action="#" class="contact__form">
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="text"
-                class="contact__form-input"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme contact__btn">
-              Submit
-            </button>
-          </form>
-        </div>
-       <h2>Contact Form</h2>
-<form method="post" name="Contact Form"data-netlify="true">
-<p>
-    <label for="name">Name:</label>
-    <input type="text" name="name" id="name">
-</p>
-<p>
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email">
-</p>
-<p>
-    <label for="comments">Comments:</label><br/>
-    <textarea name="comments" id="comments"></textarea>
-</p>
-<p>
-    <input type="submit">
-</p>
+        <form name="simpleContactForm" method="POST" id="simple-contact-form" class="contact-form">
+    <p class="form-row">
+        <label id="contact-form-name-label" for="contact-form-name" class="form-label">Name</label>
+        <input type="text" name="name" id="contact-form-name" aria-labelledby="contact-form-name-label" class="form-input" />
+    </p>
+    <p class="form-row">
+        <label id="contact-form-email-label" for="contact-form-email" class="form-label">Email address</label>
+        <input type="email" name="email" id="contact-form-email" aria-labelledby="contact-form-email-label" class="form-input" />
+    </p>
+    <p class="form-row">
+        <label id="contact-form-message-label" for="contact-form-message" class="form-label">Message</label>
+        <textarea
+            name="message"
+            id="contact-form-message"
+            aria-labelledby="contact-form-message-label"
+            class="form-textarea"
+            rows="7"
+        ></textarea>
+    </p>
+    <p class="form-row form-submit">
+        <button type="submit" class="button">Send Message</button>
+    </p>
 </form>
+       
+
 
       </div>
     </section>
