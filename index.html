@@ -233,7 +233,7 @@ In this portfolio, you will be able to see a set of projects I previously create
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="#" class="contact__form", data-netlify="true">
+          <form action="#" class="contact__form">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
@@ -273,6 +273,27 @@ In this portfolio, you will be able to see a set of projects I previously create
             </button>
           </form>
         </div>
+        <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
       </div>
     </section>
     <footer class="main-footer">
